@@ -76,12 +76,18 @@ footer{
     background-color: #fff;
     color: #333;
 }
+.footer{
+    padding-bottom: 20px;
+}
 
 .footer p{
     font-size: 1.4rem;
     color: #BDBDBD;
     text-align: center;
 
+}
+.footer a{
+    text-decoration: none;
 }
 @media (max-width: 900px) {
     .main{
