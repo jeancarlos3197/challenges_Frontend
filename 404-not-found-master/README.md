@@ -38,8 +38,6 @@
 
 ![screenshot](https://github.com/jeancarlos3197/challenges_Frontend/blob/main/404-not-found-master/2022-01-15%20231039.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
 - Where can I see your demo?
   - [Here](https://jeancarlos3197.github.io/challenges_Frontend/404-not-found-master/)
 - What was your experience?
