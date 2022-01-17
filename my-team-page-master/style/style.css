@@ -98,6 +98,9 @@ h3{
     text-align: center;
     color: #A9A9A9;
 }
+.footer a{
+    text-decoration: none;
+}
 
 @media (max-width: 1300px){
     .wrapper{
