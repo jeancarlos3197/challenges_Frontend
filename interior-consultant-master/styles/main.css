@@ -32,7 +32,7 @@ h1{
     font-size: 1.8rem;
 }
 
-.header-navbar ul li:nth-child(1) a{
+.header-navbar li:nth-child(1) a{
     font-weight: 700;
 }
 
@@ -297,7 +297,7 @@ a{
     }
 }
 
-@media (min-width:500px) and (max-width:900px){
+@media (max-width:900px){
     .wrapper{
         padding: 20px 40px 20px 40px;
     }
