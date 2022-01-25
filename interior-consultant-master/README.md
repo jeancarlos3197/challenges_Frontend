@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://jeancarlos3197.github.io/challenges_Frontend/interior-consultant-master/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/jeancarlos3197/challenges_Frontend/tree/main/interior-consultant-master">
       Solution
     </a>
     <span> | </span>
