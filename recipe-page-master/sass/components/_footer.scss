@@ -5,6 +5,10 @@
     padding-bottom: 24px;
     
     p{
+        @include breakpoint(xs){
+            display: block;
+        }
+
         a{
             text-decoration: none;
             color: #828282;

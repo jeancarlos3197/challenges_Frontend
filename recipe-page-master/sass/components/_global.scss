@@ -19,6 +19,10 @@ h6 {
 h1 {
   font-size: 4.8rem;
   font-weight: 700;
+
+  @include breakpoint(xs){
+    font-size: 2.4rem;
+  }
 }
 
 h2 {
@@ -38,6 +42,17 @@ p {
 .description--text {
   p {
     font-style: italic;
+    font-weight: 500;
+    width: 600px;
+
+    @include breakpoint(xs){
+      font-size: 1.2rem;
+      width: 100%;
+    }
+
+    @include breakpoint(xs){
+      width: 100%;
+    }
   }
 }
 
@@ -45,7 +60,10 @@ p {
   &--icon {
     color: #4f4f4f;
     font-size: 30px;
-    // width: 30px;
+    
+    @include breakpoint(xs){
+      font-size: 14px;
+    }
   }
   &--description {
     span {
@@ -53,12 +71,19 @@ p {
       font-weight: 700;
       font-size: 1rem;
       color: #bdbdbd;
+
+      @include breakpoint(xs){
+        font-size: 0.8rem;
+      }
     }
     p {
       font-family: map-get($fnfamily, info);
       font-weight: 500;
       font-size: 1.4rem;
-      color: #333333;
+
+      @include breakpoint(xs){
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -67,12 +92,20 @@ p {
   h2 {
     font-size: 2.4rem;
     font-weight: 700;
+
+    @include breakpoint(xs){
+      font-size: 1.8rem;
+    }
   }
 
   h3 {
     font-size: 1.8rem;
     font-weight: 400;
     font-style: italic;
+
+    @include breakpoint(xs){
+      font-size: 1.6rem;
+    }
   }
 
   input[type="checkbox"] {
@@ -83,6 +116,10 @@ p {
   label {
     font-family: map-get($fnfamily, info);
     font-size: 1.6rem;
+
+    @include breakpoint(xs){
+      font-size: 1.4rem;
+    }
   }
   span {
     font-weight: 700;
@@ -102,16 +139,37 @@ p {
         font-family: map-get($fnfamily, info);
         font-size: 1.6rem;
         font-weight: 400;
+        line-height: 150%;
+        width: 530px;
+
+        @include breakpoint(xs){
+          width: 100%;
+        }
+        @include breakpoint(xs){
+          width: 100%;
+        }
       }
     }
   }
   &_link {
     font-family: map-get($fnfamily, info);
     font-size: 1.6rem;
+
+    @include breakpoint(xs){
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
     a {
       font-family: map-get($fnfamily, info);
       font-size: 1.6rem;
       text-decoration: none;
+
+      @include breakpoint(xs){
+        font-size: 1.2rem;
+        font-style: italic;
+        width: 100%; 
+      }
     }
   }
 }
@@ -131,6 +189,14 @@ footer{
 
 .wrapper{
     padding: 50px 150px 0px 150px;
+
+    @include breakpoint(xs){
+      padding: 30px 20px 0px 20px;
+    }
+
+    @include breakpoint(sm){
+      padding: 30px 20px 0px 20px;
+    }
 }
 
 .orange{
@@ -140,4 +206,8 @@ footer{
 .union{
   display: flex;
   justify-content: space-between;
+
+  @include breakpoint(xs){
+    display: block;
+  }
 }

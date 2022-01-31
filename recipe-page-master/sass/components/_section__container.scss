@@ -1,5 +1,9 @@
 .union {
   margin-top: 40px;
+
+  @include breakpoint(xs) {
+    margin-top: 24px;
+  }
   &__right {
     order: 1;
     margin-top: 40px;
@@ -10,11 +14,33 @@
     height: min-content;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
+    position: sticky;
+    top: 40px;
+
+    @include breakpoint(xs) {
+      margin-top: 0px;
+      box-shadow: none;
+      border-radius: 0px;
+      position: relative;
+      padding: 0;
+      display: grid;
+      grid-template-rows: 26px 26px;
+      top: 0px;
+      gap: 20px;
+    }
 
     &__item {
       display: flex;
       align-items: center;
       gap: 14px;
+
+      @include breakpoint(xs) {
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+          grid-row-start: 2;
+        }
+      }
 
       &--description {
         span {
@@ -34,18 +60,44 @@
     &__ingredients {
       h2 {
         margin-top: 40px;
+
+        @include breakpoint(xs) {
+          margin-top: 30px;
+        }
       }
       &__list__container {
         h3 {
           margin-top: 30px;
           margin-bottom: 30px;
+
+          @include breakpoint(xs) {
+            margin-top: 16px;
+            margin-bottom: 16px;
+          }
         }
         &__items {
           display: flex;
 
+          input {
+            &:checked {
+              & + label {
+                text-decoration: line-through;
+              }
+            }
+          }
+
           label {
             margin-left: 15px;
             line-height: 25px;
+            width: 530px;
+
+            @include breakpoint(xs) {
+              width: 100%;
+            }
+
+            @include breakpoint(xs){
+              width: 100%;
+            }
           }
         }
       }
@@ -83,6 +135,15 @@
         &_link {
           margin-top: 50px;
           color: #bdbdbd;
+
+          br {
+            display: none;
+
+            @include breakpoint(xs) {
+              display: block;
+              margin-top: 0px;
+            }
+          }
 
           a {
             margin-top: 50px;

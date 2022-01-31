@@ -8,5 +8,9 @@
     &--img{
         margin-top: 40px;
         width: 100%;
+
+        @include breakpoint(xs){
+            margin-top: 20px;
+        }
     }
 }
