@@ -1,0 +1,95 @@
+.union {
+  margin-top: 40px;
+  &__right {
+    order: 1;
+    margin-top: 40px;
+    padding: 50px 40px 50px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: min-content;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      &--description {
+        span {
+          color: #bdbdbd;
+          text-transform: uppercase;
+        }
+
+        p {
+          margin-top: 4px;
+          width: max-content;
+        }
+      }
+    }
+  }
+
+  &__left {
+    &__ingredients {
+      h2 {
+        margin-top: 40px;
+      }
+      &__list__container {
+        h3 {
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+        &__items {
+          display: flex;
+
+          label {
+            margin-left: 15px;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+
+    &__instructions {
+      margin-top: 30px;
+
+      &__list {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &_items {
+          display: grid;
+          grid-template-columns: 36px 1fr;
+          gap: 15px;
+
+          div {
+            height: 36px;
+            text-align: center;
+            background: orange;
+            border-radius: 6px;
+            color: white;
+          }
+
+          p {
+            b {
+              font-weight: 700;
+            }
+          }
+        }
+
+        &_link {
+          margin-top: 50px;
+          color: #bdbdbd;
+
+          a {
+            margin-top: 50px;
+            color: #bdbdbd;
+          }
+        }
+      }
+    }
+  }
+}

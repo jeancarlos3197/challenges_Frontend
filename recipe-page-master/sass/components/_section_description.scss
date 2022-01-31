@@ -1,0 +1,12 @@
+.description{
+    &--text{
+        margin-top: 12px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    &--img{
+        margin-top: 40px;
+        width: 100%;
+    }
+}
